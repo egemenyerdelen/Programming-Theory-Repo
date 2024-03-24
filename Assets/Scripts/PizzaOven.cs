@@ -19,6 +19,7 @@ public class PizzaOven : Oven
     {
         StartCooking();
     }
+    // POLYMORPHISM
     public override void StartCooking()
     {
         if (pizzaDoughCount > 0 && orderCount > 0 && !isCooking && isCollected)

@@ -9,7 +9,7 @@ public class Oven : MonoBehaviour
     public bool isCooking;
     private bool isCollected;
     public int breadCount;
-
+    // ENCAPSULATION
     [SerializeField] private int breadDoughCount;
 
     private int breadCookingTime = 5;
@@ -27,9 +27,11 @@ public class Oven : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // ABSTRACTION
         StartCooking();
     }
 
+    // INHERITANCE
     public virtual void StartCooking()
     {
         if (breadDoughCount > 0 && orderCount > 0 && !isCooking && isCollected)
